@@ -1,0 +1,158 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-information {
+  width: 450px;
+  padding: 20px;
+  border: 1px solid #d1c1b2;
+  border-radius: 15px;
+}
+
+.form-information h2 {
+  font-size: 24px;
+  padding: 15px 0;
+  text-align: center;
+  color: #707070;
+}
+
+label {
+  color: #707070;
+}
+
+.form-information form {
+  margin: 20px 0;
+}
+
+.form-content input {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 100%;
+  border: 1px solid #d1c1b2;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+form button {
+  width: 50%;
+  outline: none;
+  border: none;
+  padding: 10px 0;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  cursor: pointer;
+  border-radius: 15px;
+  background-color: #d1c1b2;
+}
+
+form button:hover {
+  background-color: #ac9586;
+}
+
+.btn-color {
+  color: #f7f4f2;
+}
+
+.name-surname-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.form-text p {
+  text-align: center;
+  text-decoration: none;
+  color: #707070;
+}
+
+.form-link {
+  font-style: italic;
+  font-weight: 300;
+  color: #707070;
+}
+
+.form-link:hover {
+  color: #ac9586;
+  font-weight: 450;
+}
+
+/* responsive section */
+/* small screens */
+@media screen and (max-width: 480px) {
+  .form-container {
+    padding: 15px;
+  }
+
+  .form-information {
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  .form-information h2 {
+    font-size: 20px;
+    padding: 10px 0;
+  }
+
+  .name-surname-container {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .half-width {
+    width: 100%;
+  }
+
+  .form-content input {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  form button {
+    width: 70%;
+    padding: 10px 0;
+    font-size: 14px;
+  }
+
+  .form-text p,
+  .form-text a {
+    font-size: 13px;
+  }
+}
+
+/* tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .form-information {
+    max-width: 400px;
+  }
+
+  .name-surname-container {
+    gap: 10px;
+  }
+
+  form button {
+    width: 60%;
+  }
+}
+
+/* large screens */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .form-information {
+    max-width: 450px;
+  }
+
+  .name-surname-container {
+    gap: 15px;
+  }
+}

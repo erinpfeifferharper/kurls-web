@@ -1,0 +1,179 @@
+.footer-main {
+  padding: 20px;
+  text-align: start;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: #ebe5de;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.col-p {
+  margin: 10px 0;
+  line-height: 1.7rem;
+}
+
+.col img {
+  height: 50px;
+  width: auto;
+}
+
+.col {
+  flex: 1;
+  max-width: 350px;
+  padding: 10px;
+  color: #707070;
+}
+
+.row {
+  color: #707070;
+}
+
+.links-list {
+  list-style: none;
+}
+
+.links-list li {
+  margin: 10px 0;
+}
+
+.links-list li:hover {
+  color: #ac9586;
+  font-weight: 500;
+}
+
+.col-sm {
+  text-align: center;
+  padding: 10px;
+}
+
+.col-h {
+  font-weight: 550;
+}
+
+.input-container {
+  position: relative;
+  width: 100%;
+  background-color: #ebe5de;
+}
+
+.input-container input {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 100%;
+  border: 1px solid #d1c1b2;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #ebe5de;
+}
+
+.input-container button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  background-color: #d1c1b2;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.input-container button:hover {
+  background-color: #ac9586;
+}
+
+.btn-color {
+  color: #f7f4f2;
+}
+
+/* responsive section */
+/* small screens */
+@media screen and (max-width: 480px) {
+  .footer-main {
+    padding: 30px 15px;
+  }
+
+  .footer-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .col {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .col-p {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .links-list {
+    text-align: center;
+  }
+
+  .input-container {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .col-sm {
+    font-size: 11px;
+    line-height: 1.6;
+  }
+}
+
+/* tablets*/
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .footer-row {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .col {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .col:last-child {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .input-container {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .col-sm {
+    font-size: 12px;
+  }
+}
+
+/* large screens */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .footer-container {
+    padding: 0 20px;
+  }
+
+  .col {
+    max-width: 300px;
+  }
+
+  .footer-row {
+    gap: 15px;
+  }
+}

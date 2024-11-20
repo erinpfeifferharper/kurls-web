@@ -1,0 +1,66 @@
+.tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.tab-container {
+  display: flex;
+  gap: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  padding: 10px 0;
+  display: block;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 0;
+  font-size: 15px;
+  background-color: #ebe5de;
+  color: #f7f4f2;
+}
+
+.tab-button[aria-pressed="true"] {
+  background-color: #d1c1b2;
+}
+
+/* responsive section */
+/* small screens */
+@media screen and (max-width: 480px) {
+  .tab-container {
+    gap: 20px;
+  }
+
+  .tab-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 15px;
+  }
+}
+
+/* tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .tab-container {
+    gap: 30px;
+  }
+
+  .tab-button {
+    margin-top: 20px;
+    padding: 10px 25px;
+    font-size: 15px;
+  }
+}
+
+/* large screens */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .product-content {
+    max-width: 900px;
+  }
+}
